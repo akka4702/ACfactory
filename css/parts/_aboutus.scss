@@ -1,0 +1,140 @@
+@use 'mixin' as m;
+
+.audetail {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #EDE8E1;
+    font-size: 16px;
+    text-align: center;
+}
+
+.aumessage {
+    font-size: 20px;
+}
+
+.detailitem {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-size: 14px;
+
+    @include m.tab {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-left {
+        width: 48%;
+
+        @include m.tab {
+            width: 100%;
+        }
+    }
+
+    .item-right {
+        width: 45%;
+
+        @include m.tab {
+            width: 100%;
+        }
+    }
+}
+
+.trusty {
+    @include m.tab {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.detailtitle {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-inline: 5px;
+    position: relative;
+
+    ::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 150px;
+        background-color: #CBB3BB;
+        border-radius: 75px;
+        opacity: 0.4;
+        z-index: -5;
+    }
+
+    p {
+        font-size: 40px;
+        z-index: 30;
+
+        @include m.tab {
+            font-size: 32px;
+        }
+    }
+
+    .number {
+        font-size: 68px;
+        color: #BFA371;
+        padding-right: 20px;
+    }
+}
+
+.detailtext {
+    padding-block: 20px;
+    line-height: 40px;
+}
+
+.about01 {
+    padding-right: 40px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+
+    .about02-1 {
+        width: 45%;
+        margin-top: 35px;
+    }
+
+    .about02-2 {
+        width: 45%;
+        margin-bottom: 35px;
+    }
+}
+
+.third {
+    position: relative;
+    height: 250px;
+
+    .about03-1 {
+        width: 55%;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        @include m.tab {
+            left: 0;
+            top: 0;
+        }
+    }
+
+    .about03-2 {
+        width: 55%;
+        position: absolute;
+        right: 0;
+        top: 180px;
+
+        @include m.tab {
+            top: 130px;
+        }
+    }
+
+
+}

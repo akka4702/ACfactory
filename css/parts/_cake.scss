@@ -1,0 +1,64 @@
+@use 'mixin' as m;
+
+.products-items {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #EDE8E1;
+    font-size: 16px;
+    text-align: center;
+}
+
+.products-guide {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-block: 20px;
+    text-align: left;
+
+    .ccguide-title {
+        padding-right: 30px;
+    }
+}
+
+.info {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.items-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5vw;
+    text-align: center;
+
+    @include m.tab {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item {
+        width: 100%;
+
+        img {
+            border-top-left-radius: 90%;
+            border-top-right-radius: 90%;
+        }
+
+        .itemtitle {
+            background-color: #BFA371;
+            color: #fff;
+            padding-block: 5px;
+            margin-top: 5px;
+        }
+
+    }
+}
+
+.nextlink {
+    padding-block: 50px;
+
+    span {
+        padding-inline: 10px;
+    }
+}
