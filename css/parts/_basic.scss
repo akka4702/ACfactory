@@ -71,11 +71,11 @@ h2 {
     &::after {
         content: "";
         display: block;
-        width: 12px;
+        width: 50px;
         height: 2px;
         background-color: #B43E2E;
         position: absolute;
-        bottom: -10px;
+        bottom: -20px;
         left: 50%;
         transform: translateX(-50%);
     }

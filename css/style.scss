@@ -14,7 +14,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background: url(../img/Vector.svg) repeat-x;
+    background: url(../img/headerpc.svg) repeat-x;
     z-index: 100;
 
     @include m.tab {
@@ -550,7 +550,6 @@ header {
     padding-top: 80px;
     background-color: #EDE8E1;
     font-size: 1rem;
-    line-height: 40px;
 
     .adress {
         max-width: 700px;
@@ -558,6 +557,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         text-align: left;
+        line-height: 40px;
 
         dt {
             width: 35%;
@@ -590,10 +590,10 @@ header {
     padding-block: 80px;
     background-color: #EDE8E1;
     font-size: 1rem;
-    line-height: 40px;
     text-align: center;
 
     dl.contact {
+        line-height: 40px;
         margin: auto;
         max-width: 700px;
         text-align: left;
